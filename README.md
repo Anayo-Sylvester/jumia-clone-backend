@@ -33,38 +33,40 @@ Clone this repository and navigate to the project folder:
 ```bash
 git clone https://github.com/yourusername/jumia-backend-clone.git
 cd jumia-backend-clone
+```
 Install the dependencies:
-
-npm install
-
+  ```bash
+  npm install
+  ```
 Create a .env file in the root directory and add the necessary environment variables:
-
+```bash
 MONGO_URI=your-mongodb-connection-string
 JWT_SECRET=your-jwt-secret
-PORT=3000
+PORT=5000
 JWT_TTL= your-jwt-token-lifetime
-
+```
 ## 📝 API Endpoints
--**_Authentication_**
-  -**POST /api/v1/auth/register** – Register a new user.
-  -**POST /api/v1/auth/login** – Login an existing user.
+-_Authentication:_
+  - **POST /api/v1/auth/register** – Register a new user.
+  - **POST /api/v1/auth/login** – Login an existing user.
 
--**_Products_**
-  -**GET /api/v1/products** – Retrieve a list of products.
-  -**POST /api/v1/products** – Add a new product (Admin only).
-  -**PUT /api/v1/products/:id** – Update a product (Admin only).
-  -**DELETE /api/v1/products/:id** – Delete a product (Admin only).
+-_Products:_
+  - **GET /api/v1/products** – Retrieve a list of products.
+  - **POST /api/v1/products** – Add a new product (Admin only).
+  - **PUT /api/v1/products/:id** – Update a product (Admin only).
+  - **DELETE /api/v1/products/:id** – Delete a product (Admin only).
 
--_**Orders**_
-  **POST /api/v1/orders** – Create a new order.  
-  **GET /api/v1/orders/:userId** – Get orders for a specific user.
+-_Orders:_
+  - **POST /api/v1/orders** – Create a new order.  
+  - **GET /api/v1/orders/:userId** – Get orders for a specific user.
   
-##💡 Running the Project
+## 💡 Running the Project
 
 Run the development server:
- -npm run start
-
+ ```bash
+   npm run start
+  ```
 This will start the server on http://localhost:5000.
 
-💎 Contribution
+## 💎 Contribution
   Feel free to fork this repository and create pull requests. If you find any issues or want to suggest improvements, open an issue on GitHub.
